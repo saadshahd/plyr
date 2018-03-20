@@ -926,8 +926,8 @@ const controls = {
         }
 
         // Fast forward button
-        if (this.config.controls.includes('fast-forward')) {
-            container.appendChild(controls.createButton.call(this, 'fast-forward'));
+        if (this.config.controls.includes('fast-forward') || this.config.controls.includes('forward')) {
+            container.appendChild(controls.createButton.call(this, 'forward'));
         }
 
         // Progress
