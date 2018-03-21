@@ -127,8 +127,8 @@ class Listeners {
                     break;
 
                 case 39:
-                    // Arrow forward
-                    this.player.forward();
+                    // Arrow fast forward
+                    this.player.fastForward();
                     break;
 
                 case 37:
@@ -416,9 +416,9 @@ class Listeners {
         );
 
         // Rewind
-        utils.on(this.player.elements.buttons.forward, 'click', event =>
-            proxy(event, 'forward', () => {
-                this.player.forward();
+        utils.on(this.player.elements.buttons.fastForward, 'click', event =>
+            proxy(event, 'fastForward', () => {
+                this.player.fastForward();
             }),
         );
 
